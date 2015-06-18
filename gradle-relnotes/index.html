@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>gradle-relnotes</title><!-- stylesheets.--><link rel="stylesheet" href="/vendor/semantic-ui/dist/semantic.min.css"><link rel="stylesheet" href="/assets/style.css"></head><body class="project page"><div id="container" class="layout pusher"><!-- header--><div id="header" class="fixed ui attached inverted large borderless menu"><div class="ui container"><!-- logo--><a id="logo" href="/" class="ui item"><img src="/assets/entera_logo_small.png" class="ui"></a><!-- header--><div class="ui item header"> 
+gradle-relnotes</div><div class="right menu"><!-- github link--><a href="https://github.com/entera/gradle-relnotes/" class="ui item"><i class="github large icon"></i>View on GitHub</a></div></div></div><!-- sub-header--><div id="sub-header" class="ui inverted basic segment"><div class="ui container"><div class="ui inverted basic segment header small">A Gradle plugin to generate <strong>release notes</strong>.</div></div></div><!-- content--><div class="layout filler"><div class="ui container"><div class="ui hidden divider"></div><div class="ui grid"><div id="sidebar" class="four wide column"><div class="ui basic segment"><div class="ui sticky"><div class="ui fluid vertical small menu"><a class="active item">Status</a><a class="item">Features</a><a class="item">Usage</a><a class="item">Motivation</a><a class="item">Contribute</a><a class="item">License</a></div><div class="ui fluid vertical secondary small menu"><a class="item">Javadocs</a><a class="item">Wiki</a><a class="item">Issues</a><a class="item">Discussion</a><a class="item">Changelog</a></div></div></div></div><div id="content" class="twelve wide column"><div class="ui basic segment"><article><h2>Status</h2><p>This project was started on <strong>December 10, 2014</strong> and is <strong>not ready for production</strong>, yet. :smiley_cat:</p>
+<h2>Features</h2><p><em>TBD.</em></p>
+<h2>Usage</h2><p><strong>Example 1: <code>build.gradle</code></strong></p>
+<pre><code class="language-groovy">buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        // use the gradle relnotes plugin to generate release notes.
+        classpath &quot;de.entera:gradle-relnotes-plugin:0.1.0&quot;
+    }
+}
+
+// provide generateReleaseNotes task.
+apply plugin: &quot;de.entera.relnotes&quot;
+
+// configure generateReleaseNotes task.
+releaseNotes {
+    targetFile rootProject.file(&quot;CHANGES.md&quot;)
+    githubRepo &quot;entera/gradle-relnotes&quot;
+    githubKey &quot;GITHUB_KEY&quot;
+}
+</code></pre>
+<h2>Motivation</h2><p><em>TBD.</em></p>
+<h2>Contribute</h2><p><em>TBD.</em></p>
+<h2>License</h2><pre><code>Copyright 2014-2015 Benjamin Gudehus &lt;hastebrot@gmail.com&gt;
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the
+European Commission - subsequent versions of the EUPL (the &quot;Licence&quot;); You may
+not use this work except in compliance with the Licence.
+
+You may obtain a copy of the Licence at:
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an &quot;AS IS&quot; basis, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the Licence for the
+specific language governing permissions and limitations under the Licence.
+</code></pre></article></div></div></div><div class="ui hidden divider"></div></div></div><!-- footer--><div id="footer" class="ui inverted vertical footer segment"><div class="ui center aligned container"><div class="ui stackable inverted grid"><div class="sixteen wide column">Copyright &copy; 2015 entera GbR</div><!--div.four.wide.column a--><!--div.four.wide.column b--><!--div.four.wide.column c--><!--div.four.wide.column d--></div></div></div></div></body><!-- javascripts.--><script src="/vendor/jquery/dist/jquery.min.js"></script><script src="/vendor/semantic-ui/dist/semantic.min.js"></script><script src="/assets/script.js"></script></html>
