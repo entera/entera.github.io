@@ -17,7 +17,7 @@ div#container.layout.pusher
         
       div.right.menu
         // github link
-        a.ui.item(href="#{header.github.url}")
+        a.ui.item(href="#{header.github.url}" target="_blank")
           i.github.large.icon
           | #{header.github.text}
 
@@ -41,7 +41,7 @@ div#container.layout.pusher
       div.ui.hidden.divider
       
       div.ui.grid
-        div#sidebar.four.wide.column
+        div#sidebar.four.wide.column.computer.only
           div.ui.basic.segment
             div.ui.sticky
               div.ui.fluid.vertical.small.menu
@@ -53,27 +53,32 @@ div#container.layout.pusher
           
             // category
             div.ui.basic.segment
-              h2.ui.header= category.title
+              h2= category.title
               p= category.description
               
               div.ui.doubling.three.cards
                 for project in category.projects
                 
                   // project
-                  a.ui.card(href="/gradle-relnotes/")
+                  a.ui.fluid.card(href="#{project.url}")
                     div.image
                       img(src="#{project.image}")
                     
                     div.content
                       div.header= project.title
-                      div.meta: span.releases= project.meta
                       div.description= project.description
                       
                     div.extra.content
-                      div.right.floated.time= project.time
-                      span.version
-                        i.tag.icon
-                        = project.tag
+                      div.ui.horizontal.list
+                        div.item.version
+                          i.tag.icon
+                          = project.version
+                        div.item.stars
+                          i.star.icon
+                          = project.stars
+                        div.item.forks
+                          i.fork.icon
+                          = project.forks
                       
       div.ui.hidden.divider
 
@@ -84,8 +89,15 @@ div#container.layout.pusher
   div#footer.ui.inverted.vertical.footer.segment
     div.ui.center.aligned.container
       div.ui.stackable.inverted.grid
-        div.sixteen.wide.column Copyright &copy; 2015 entera GbR
-        //div.four.wide.column a
-        //div.four.wide.column b
-        //div.four.wide.column c
-        //div.four.wide.column d
+        div.four.wide.column.left.aligned
+          strong Open Source
+          div.ui.inverted.link.list
+            a.item(href="https://entera.github.io/") entera Open Source
+            a.item(href="https://github.com/entera/") entera GitHub
+
+        div.right.aligned.twelve.wide.column
+          div: img(src="/assets/entera_logo.png")
+          //div Copyright &copy; 2015 <strong>entera GbR</strong>. All rights reversed.
+
+        
+
