@@ -1,0 +1,9 @@
+bower_components/jquery/*
+!bower_components/jquery/dist
+
+bower_components/semantic-ui/*
+!bower_components/semantic-ui/dist/
+bower_components/semantic-ui/dist/*/*
+
+bower_components/sprint/*
+!bower_components/sprint/*[js|map|css]

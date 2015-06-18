@@ -1,0 +1,17 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title= meta.title
+    
+    // stylesheets.
+    link(rel="stylesheet" href="/vendor/semantic-ui/dist/semantic.min.css")
+    link(rel="stylesheet" href="/assets/style.css")
+        
+  body.project.page
+    != yield
+
+  // javascripts.
+  script(src="/vendor/jquery/dist/jquery.min.js")
+  script(src="/vendor/semantic-ui/dist/semantic.min.js")
+  script(src="/assets/script.js")

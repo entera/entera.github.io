@@ -1,0 +1,118 @@
+//-----------------------------------------------------------------------------
+// basic.
+//-----------------------------------------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono:400);
+
+html,
+body {
+  font-size: 16px;
+}
+
+html,
+body,
+.ui.header,
+.ui.menu {
+  font-family: "PT Sans";
+}
+
+#sub-header .ui.header,
+.ui.card .description,
+p {
+  font-family: "PT Serif";
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+code, 
+pre {
+  font-family: "PT Mono";  
+}
+
+pre {
+  background: #f0f0f0;
+  //border-radius: 8px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+//-----------------------------------------------------------------------------
+// custom.
+//-----------------------------------------------------------------------------
+
+.layout {
+  &.pusher {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    min-height: 100vh;
+  }
+  
+  &.filler {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0%;
+  }
+}
+
+@entera-green: #10938d;
+@project-blue: #b94948;
+
+#header {
+  #logo {
+    padding-top: 10px;
+    padding-bottom: 0;
+    opacity: 0.9;
+  }
+  
+  .header {
+    padding-left: 0;
+  }
+}
+
+.ui.vertical.secondary.menu .item {
+  color: gray !important;
+}
+
+#sub-header {
+  margin: 65px 0 0 0;
+  padding: 0;
+  
+  .header {
+    font-weight: normal;
+  }
+}
+
+.organization.page {
+  #header,
+  #sub-header,
+  #footer {
+    background: @entera-green;
+    
+    .segment {
+      background: @entera-green;
+    }
+  }
+  
+  .ui.vertical.menu .item {
+    color: @entera-green;
+  }
+}
+
+.project.page {
+  #header,
+  #sub-header,
+  #footer {
+    background: @project-blue;
+    
+    .segment {
+      background: @project-blue;
+    }
+  }
+  
+  .ui.vertical.menu .item {
+    color: @project-blue;
+  }
+}

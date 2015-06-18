@@ -1,0 +1,71 @@
+{
+  "index": {
+    "meta": {
+      "title": "entera Open Source"
+    },
+
+    "header": {
+      "title": "Open Source Portal",
+      "description": "Our <strong>libraries and tools</strong> for the <strong>open source community</strong>.",
+      
+      "logo": {
+        "image": "/assets/entera_logo_small.png",
+        "url": "/"
+      },
+      
+      "github": {
+        "text": "github.com/entera",
+        "url": "https://github.com/entera/"
+      }
+    },
+
+    "categories": [
+      {
+        "title": "JavaFX",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+        "projects": [
+          {
+            "title": "SampleFX",
+            "description": "A JavaFX tool for rapid prototyping.",
+            "image": "assets/250x150.png",
+            "meta": "12 releases",
+            "tag": "0.12.0",
+            "time": "2015-01-01"
+          },
+          {
+            "title": "WorkbenchFX",
+            "description": "A JavaFX component.",
+            "image": "assets/250x150.png",
+            "meta": "12 releases",
+            "tag": "0.12.0",
+            "time": "2015-01-01"
+          }
+        ]
+      },
+      {
+        "title": "Gradle",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+        "projects": [
+          {
+            "title": "gradle-relnotes",
+            "description": "A Gradle plugin to generate release notes.",
+            "image": "assets/250x150.png",
+            "meta": "12 releases",
+            "tag": "0.12.0",
+            "time": "2015-01-01"
+          },
+          {
+            "title": "gradle-javafx",
+            "description": "A Gradle plugin to package JavaFX applications.",
+            "image": "assets/250x150.png",
+            "meta": "12 releases",
+            "tag": "0.12.0",
+            "time": "2015-01-01"
+          }
+        ]
+      }
+    ]
+  }
+}
